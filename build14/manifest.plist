@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://cinema-connect-dubai.lovable.app/__l5e/assets-v1/a6608198-0fe6-48d7-8ab0-4b1318864bbf/Build14.ipa</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.cinema4k.vip.dev</string>
+				<key>bundle-version</key>
+				<string>14</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>4K VLC Trial — Build 14</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
