@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://api.codemagic.io/artifacts/.eJwVwduSQzAAANB_6XtmjLo-CrsqZkspKS-GJXGvjBD69Tt7zoVa_yBTxFKvA_tl3YTzjyL0_Kzo0Gnwm0Jp1zEWWIv3Rc2Idc9QbaQSANTLHzooGv4ylK8Wb0cCYFggZsh6f19Wd3y7SzeXS4IQZsIIsLcnDVvrbT16bhZkNCX7iAFc00iQWmzDewLGhEXmD02nk_EDU2cKURg3anpmt8188Mh7yu3ulJwiNlcZynV2oqd5CzLTZhsPxavg8hXPrdV6rKjgz-lHs2pzwTTCez-47uVAna7uBwhFLO-udIyjotmQAPW4_AEXUVz-.SVZTCOlA3sIwCsPElRmsm6CZMWA</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.cinema4k.vip.dev</string>
+				<key>bundle-version</key>
+				<string>36</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>4K VLC Trial</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
