@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://hkrwqrbamkwxjcvdrcek.supabase.co/storage/v1/object/sign/vlc-trial-ota/build35/App.ipa?token=eyJraWQiOiJjM2M0NWNhMy02MzA1LTQ4NTItOTdjNC0xMDZjYTU2MGExZmIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2bGMtdHJpYWwtb3RhL2J1aWxkMzUvQXBwLmlwYSIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3OTMyNDU3NjUsImV4cCI6MjEwODYwNTc2NX0.Gtxd2RwaAZdvh9V5yjFhsZhzLN8a3vt1jS101aCiMZc</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.cinema4k.vip.dev</string>
+				<key>bundle-version</key>
+				<string>35</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>4K VLC Trial Build 35</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
