@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; connect-src 'none'">
+<title>4K VLC Trial — تثبيت Build 1002 الخاص</title>
+<meta name="description" content="تثبيت نسخة الاختبار الخاصة على الآيفون المسجل دون حذف التطبيق الأصلي.">
+<meta property="og:title" content="4K VLC Trial — Build 1002">
+<meta property="og:description" content="تثبيت نسخة الاختبار الخاصة على الآيفون المسجل.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--background:#0B0B0D;--foreground:#f3f3f5;--primary:#007BFF;--notice:#eac465;--border:#444448;--muted:#b9b9c0}
+*{box-sizing:border-box}body{margin:0;background:var(--background);color:var(--foreground);font-family:system-ui,sans-serif;line-height:1.85;padding:32px 22px}main{max-width:560px;margin:auto}h1{font-size:26px;line-height:1.5;overflow-wrap:anywhere}.install{display:block;background:var(--primary);color:var(--foreground);text-align:center;text-decoration:none;padding:14px;border-radius:8px;font-weight:700}.install[aria-disabled="true"]{pointer-events:none;opacity:.45}strong{color:var(--notice)}small{color:var(--muted)}#status{border-block:1px solid var(--border);padding-block:14px}p{overflow-wrap:anywhere}a:focus-visible{outline:3px solid var(--notice);outline-offset:4px}
+</style>
+</head>
+<body><main>
+<h1>4K VLC Trial<br>Build 1002</h1>
+<p>افتح هذه الصفحة في <strong>Safari</strong> على الآيفون المسجل، وليس داخل معاينة الملفات أو متصفح تطبيق آخر.</p>
+<p id="status" role="status">الرابط الخاص غير موجود. افتح الرابط الكامل الذي أُرسل إليك.</p>
+<a id="install" class="install" aria-disabled="true" tabindex="-1">تثبيت Build 1002</a>
+<p id="feedback" role="status"></p>
+<p><strong>سيحدّث Build 1001 أو 4K VLC Trial السابق.</strong> لن يستبدل تطبيق 4K CINEMA SHOP الأصلي. لا تحذف أي تطبيق.</p>
+<p>بعد الضغط، وافق على طلب «تثبيت». إذا لم يظهر، افتح الرابط الكامل مباشرة في Safari، ثم جرّب الزر مجددًا.</p>
+<p>إذا طلب الجهاز وضع المطوّر: الإعدادات ← الخصوصية والأمان ← وضع المطوّر، واتبع تعليمات الآيفون.</p>
+<p><small>رابط التنزيل مؤقت ويعمل لمن يحوزه؛ لا تشاركه. التثبيت موقّع للآيفون المسجل فقط. هذه نسخة اختبارك الشخصي، وليست إصدارًا للعملاء أو إقرارًا باكتمال امتثال النشر الرسمي.</small></p>
+</main>
+<script>
+function privateInstallTarget(fragment, now) {
+  try {
+    const params = new URLSearchParams(fragment.replace(/^#/, ''));
+    const manifest = new URL(params.get('manifest') || '');
+    if (manifest.protocol !== 'https:' || manifest.hostname !== 'hkrwqrbamkwxjcvdrcek.supabase.co' || manifest.username || manifest.password || manifest.hash || !manifest.pathname.startsWith('/storage/v1/object/sign/private-ios-trial/') || !manifest.pathname.endsWith('/manifest.plist')) return {error:'الرابط الخاص غير صالح. اطلب رابطًا جديدًا.'};
+    const token = manifest.searchParams.get('token');
+    if (!token) return {error:'الرابط الخاص غير صالح. اطلب رابطًا جديدًا.'};
+    const part = token.split('.')[1];
+    if (!part) return {error:'الرابط الخاص غير صالح. اطلب رابطًا جديدًا.'};
+    const payload = JSON.parse(atob(part.replace(/-/g,'+').replace(/_/g,'/')));
+    if (typeof payload.exp !== 'number' || !Number.isFinite(payload.exp) || payload.exp * 1000 <= now) return {error:'انتهت صلاحية الرابط. اطلب رابطًا جديدًا، ولا تحذف التطبيق.'};
+    return {href:'itms-services://?action=download-manifest&url='+encodeURIComponent(manifest.href), expires:payload.exp*1000};
+  } catch { return {error:'الرابط الخاص غير موجود أو غير صالح. افتح الرابط الكامل الذي أُرسل إليك.'}; }
+}
+const target = privateInstallTarget(location.hash, Date.now());
+window.addEventListener('hashchange', function(){ location.reload(); });
+const install = document.getElementById('install');
+const status = document.getElementById('status');
+if (target.href) {
+  install.href=target.href;
+  install.removeAttribute('aria-disabled');
+  install.removeAttribute('tabindex');
+  status.textContent='صالح حتى '+new Intl.DateTimeFormat('ar-SA',{dateStyle:'medium',timeStyle:'short',timeZone:'Asia/Riyadh'}).format(target.expires)+' بتوقيت الرياض.';
+  install.addEventListener('click',function(event){
+    if(Date.now() >= target.expires){event.preventDefault();install.removeAttribute('href');install.setAttribute('aria-disabled','true');status.textContent='انتهت صلاحية الرابط. اطلب رابطًا جديدًا.';return;}
+    document.getElementById('feedback').textContent='أُرسل طلب التثبيت إلى iOS. ظهور طلب الموافقة وتثبيت التطبيق يحتاجان التحقق على الآيفون.';
+  });
+} else status.textContent=target.error;
+</script>
+</body></html>
