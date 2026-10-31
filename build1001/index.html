@@ -44,6 +44,7 @@ function privateInstallTarget(fragment, now) {
   } catch { return {error:'الرابط الخاص غير موجود أو غير صالح. افتح الرابط الكامل الذي أُرسل إليك.'}; }
 }
 const target = privateInstallTarget(location.hash, Date.now());
+window.addEventListener('hashchange', function(){ location.reload(); });
 const install = document.getElementById('install');
 const status = document.getElementById('status');
 if (target.href) {
